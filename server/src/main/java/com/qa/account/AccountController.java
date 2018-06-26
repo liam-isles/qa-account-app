@@ -18,7 +18,6 @@ class AccountController {
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<Account> AccountCont() {
     	return repository.findAll().stream()
-//    			.filter(this::isCool)
     			.collect(Collectors.toList());
     }
 }
